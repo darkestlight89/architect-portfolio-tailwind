@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+            rel="stylesheet">
+        <style type="text/tailwindcss">
+            @theme {
+                --color-grey-100: #F9F9F9;
+                --color-grey-300: #F3F3F3;
+                --color-grey-500: #e2e2e2;
+                --color-grey-700: #BABABA;
+                --color-grey-900: #5F5F5F;
+                --color-grey-950: #222222;
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/4b80f76f52.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!--Navbar Section-->
+        <!-- Styled in seperate styles sheet to avoid repetition -->
+        <nav class="navbar"> 
+            <h6 class="title">Student_Portfolio_V1</h6>
+            <button id="collapse-button">Menu <i class="fa-solid fa-caret-down" id="navbar-drop-down-symbol"></i></button>
+            <ul class="drop-down-navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-functions">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="w-fit">Download_CV</button>
+            </div>
+        </nav>
+
+
+        <!--Tailwind class hierachy for this HTML: general-classes, functionality, layout, appearance, children's-layout, children's-appearance-->
+
+
+        <!--Header Section-->
+        <header class="grid grid-cols-3 w-[100vw] mt-[6vh] gap-x-[5vw] px-[5%] pt-[5%]">
+            <div class="title-section col-span-2 text-2xl md:text-5xl lg:text-7xl">
+                <h2 class="font-bold text-base text-grey-900 tracking-[5px] my-5">Selected Works 2023-24</h2>
+                <h1>Architectural <br> Integrity & <br> Spatial Logic.</h1>
+            </div>
+            <div class="explanation-container my-0 py-[15%]">
+                <p class="border-l-[0.3vw] border-black pl-[5%] text-xs text-grey-900 md:text-sm lg:text-lg"> A focused investigation into modular
+                    structures and technical precision
+                    within high density environments. Designed for clarity, 
+                    authority, and high performance utility.
+                </p>
+                <div class="button-container flex flex-col sm:flex-row gap-y-[1vh] sm:gap-x-[1vw] my-[3vh]">
+                    <a href="#portfolio" id="explore-portfolio-button" class="link text-center uppercase font-[600] tracking-widest w-full h-full py-[2vh] shadow-md shadow-grey-900 text-xs lg:text-md flex-1 bg-black h-[8vh] w-[12vw] text-white">
+                        Explore <br> Portfolio
+                    </a>
+                    <a href="#our-philosophy" id="our-philosophy-button" class="link text-center uppercase font-[600] tracking-widest w-full h-full py-[2vh] shadow-sm shadow-grey-900 flex-1 text-xs lg:text-md bg-grey-500 ml-[vw] h-[8vh] w-[12vw]">
+                        Our <br> Philosophy
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!--Statistics Bar-->
+        <!-- Data List for Statistics Container helps associate key-value pairs -->
+        <!-- Styled in seperate styles sheet to avoid repetition -->
+        <dl class="stats-container">
+            <div class="grid-col">
+                <div class="text-container">
+                    <dt>Projects Completed</dt>
+                    <data value="42">42+</data>
+               </div>
+            </div>
+            <div class="grid-col">
+                <div class="text-container">
+                    <dt>Global Awards</dt>
+                    <data value="12">12</data>
+                </div>
+            </div>
+            <div class="grid-col">
+                <div class="text-container">
+                    <dt>Technical Certs</dt>
+                    <data value="08">08</data>
+                </div>
+            </div>
+            <div class="grid-col">
+                <div class="text-container">
+                    <dt>Design Labs</dt>
+                    <data value="03">03</data>
+                </div>
+            </div>
+        </dl>
+
+       
+        <main>
+
+            <!--Article Section-->
+            <section class="article-section grid h-[130vh] border-t-2 border-grey-700 grid-cols-2 md:grid-cols-4 px-[5%] py-5 gap-1 md:gap-5">
+                <article class="col-span-1 md:col-span-2 row-span-1 md:row-span-2">
+                    <figure class="flex flex-col w-full h-full bg-[url(images/monolith_pavilion.jpg)] bg-cover bg-no-repeat justify-end shadow-sm shadow-grey-900 px-[10%] gap-y-[2%] pb-[15%] text-grey-100">
+                        <h5 class="font-thin tracking-widest">Project 001</h5>
+                        <h3 class="text-md md:text-3xl [word-spacing:-10%] font-black font-[Arial_black] tracking-tighter">The Monolith Pavillion</h3>
+                        <h4 class="normal-case pt-[2vh]">Exploration of concrete as a fluid yet structural element in <br> public transport hubs.</h4>
+                        <a href="#the-monolith-pavilion" class="link uppercase pt-[3vh] text-xs md:text-base font-bold">View Case Study <i class="fa-solid fa-arrow-right"></i></a>
+
+                        <!--Image credit is hidden for assignement. Images are free to use under Unsplash license-->
+                        <figcaption class="hidden font-[5px]">
+                            Image credit: 8machine _. Downloaded from https://unsplash.com/photos/a-large-mirror-sitting-in-the-middle-of-a-body-of-water-VyY_mNqjgEY on 30th October 2026.
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="flex flex-col col-span-1 bg-grey-500 md:col-span-2 shadow-sm shadow-grey-900 px-[5%] py-[7%] gap-y-[5%]">
+                    <h4 class="text-grey-900 font-bold tracking-widest">Methodology</h4>
+                    <h2 class="link font-black text-md md:text-xl [word-spacing:-10%] tracking-tighter font-[Arial_black]"><a href="#BIM">BIM Integration & Structural <br> Analytics</a></h2>
+                    <p class="text-grey-900 text-xs md:text-base font-bold">Every project follows a rigid grid system of 8px increments, <br>
+                        ensuring mathematical perfection from initial concept to the final <br>
+                        blueprint. </p>
+                    <figure class="flex flex-col md:flex-row md:mt-[10%] border-t border-grey-700 md:gap-[5%] md:py-[5%]">
+                        <div class="flex-1 border-b-5 text-xs md:text-base border-black text-grey-900 font-bold">
+                            CAD
+                        </div>
+                        <div class="flex-1 border-b-5 text-xs md:text-base border-black uppercase text-grey-900 font-bold">
+                            3D Mapping
+                        </div>
+                        <div class="flex-1 border-b-5 text-xs md:text-base border-grey-700 uppercase text-grey-900 font-bold ">
+                            Sustainability
+                        </div>
+                    </figure>
+                </article>
+                <article class="flex flex-col bg-grey-300 border-r-2 border-grey-700 shadow-sm shadow-grey-900 pt-[10%] pl-[10%]">
+                    <h4 class="mb-[5%] text-grey-900 font-bold tracking-widest">Lab Archive</h4>
+                    <h2 class="link font-bold text-xl"><a href="#shadow-studies">Shadow Studies</a></h2>
+                    <figure class="mt-auto place-self-end w-40">
+                        <img  src="images/shadow_studies.jpg" alt="Window looking onto a library under strongly contrasting light and shadows.">
+                        <figcaption class="hidden font-[5px]">
+                            Image credit: Shihyu Tsao. Downloaded from https://unsplash.com/photos/a-black-and-white-photo-of-a-library-yyX0b05Gl-U on 1st November 2026. 
+                        </figcaption>
+                    </figure>
+                
+                </article>
+                <article class="flex flex-col justify-center gap-y-[5%] items-start md:col-span-1 pl-[10%] bg-black shadow-md shadow-grey-900 text-grey-100">
+                    <i class="fa-solid fa-compass-drafting text-xl"></i>
+                    <h2 class="text-md md:text-xl">Join the <br> 
+                        Architectural <br>
+                        Dialogue.</h2>
+                    <button class="border border-grey-700 uppercase font-bold text-xs py-[2%] px-[5%]"><a href="#submit-enquiry">Submit Enquiry</a></button>
+                </article>
+            </section>
+
+            <!--Current Projects-->
+            <section class="current-projects mt-[10vh] px-[5%]">
+                <div class="heading-banner flex flex-row border-b-3 py-[1.5%]">
+                    <div class="title-col">
+                        <h3 class="text-xs tracking-widest text-grey-900">Index</h3>
+                        <h2 class="text-3xl font-black font-[Arial_black] tracking-tighter">Current Projects</h2>
+                    </div>
+                    <div class="sort-by-key-col ml-auto text-xs uppercase text-right">
+                        <span class="tracking-widest text-grey-900">sort by</span>
+                        <a href="#search?year=2024" id="key" class="block link my-[2vh] font-bold underline">Year: 2024</a>
+                    </div>
+                </div>
+
+                <!-- Styled in seperate styles sheet to avoid repetition -->
+                <ul class="py-[10vh]">
+                    <li>
+                        <div class="index-number">001</div>
+                        <div class="title link"><a href="#vortex-housing-complex">Vortex Housing Complex</a></div>
+                        <a href="#search?location=stockholm" class="location link">Stockholm, SE</a>
+                        <div class="tags">
+                            <a href="#search?tag=urban" class="link">Urban</a>
+                            <a href="#search?tag=residential" class="link">Residential</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="index-number">002</div>
+                        <div class="title link"><a href="#the-linear-observatory">The Linear Observatory</a></div>
+                        <a href="#search?location=atacama" class="location link">Atacama, CL</a>
+                        <div class="tags">
+                            <a href="#search?tag=science" class="link">Science</a>
+                            <a href="#search?tag=minimalist" class="link">Minimalist</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="index-number">003</div>
+                        <div class="title link"><a href="#brutalist-atrium">Brutalist Atrium</a></div>
+                        <a href="#search?location=berlin" class="location link">Berlin, DE</a>
+                        <div class="tags">
+                            <a href="#search?tag=public" class="link">Public</a>
+                            <a href="#search?tag=interior" class="link">Interior</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <!--Subscribe Div-->
+        <div id="subscribe-div" class="flex flex-col items-center bg-black justify-center mx-[5%] mt-[5vh] [5vw] py-[15vh] gap-[5vh]">
+            <p class="mb-[5vh] text-xl md:text-5xl leading-[8vh] uppercase text-right text-grey-300 font-bold font-[Arial_black] tracking-tighter">Stay updated on the latest <br> structural investigations.</p>
+            <form id="subscribe-div-email-address" class="flex items-center w-[30vw] border-b-3 border-grey-300 text-grey-950 text-[8px] md:text-sm uppercase tracking-widest pl-[1vw] py-[2vh]">
+                <input type="email" placeholder="Email Address" class="text-grey-900 uppercase"></input> 
+                <input type="submit"><i class="fa-solid fa-arrow-right text-grey-300 ml-auto"></i></input> 
+            </form>
+            <ul class="links flex text-grey-700 gap-[5vw] text-[8px] md:text-sm tracking-widest uppercase">
+                <li class="link"><a href="#journal">Journal</a></li>
+                <li class="link"><a href="#notes">Notes</a></li>
+                <li class="link"><a href="#twitter">Twitter</a></li>
+            </ul>
+        </div>
+
+        <!--Footer-->
+        <footer class="flex bg-grey-500 mx-[5%] mb-[5vh] px-[2%] py-[1%] items-center text-[5px] md:text-xs uppercase">
+            <div class="copyright-div tracking-tighter font-black"><i class="fa-regular fa-copyright"></i> 2024 Architectural Porfolio. All Rights Reserved.</div>
+            <ul class="links ml-auto gap-[2vw] text-grey-900 flex tracking-wider">
+                <li class="link"><a href="#instagram">Instagram</a></li>
+                <li class="link"><a href="#linkedin">LinkedIn</a></li>
+                <li class="link"><a href="#github">Github</a></li>
+            </ul>
+        </footer>
+
+        <!--Navbar button functionality-->
+        <script>
+            const initializeDropDown = () => {
+
+                // Get variables
+                const navBarDropDownSymbol = document.getElementById("collapse-button");
+                const navbarDropDownLinks = document.getElementsByClassName("drop-down-navbar-links");
+
+                // Add functionality
+                navBarDropDownSymbol.addEventListener('click', ()=> {
+                    navbarDropDownLinks[0].classList.toggle("show");
+                })
+            }
+            initializeDropDown();
+        </script>
+    </body>
+</html>

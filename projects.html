@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Projects</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+            rel="stylesheet">
+        <style type="text/tailwindcss">
+            @theme {
+                --color-grey-100: #F9F9F9;
+                --color-grey-300: #F3F3F3;
+                --color-grey-500: #e2e2e2;
+                --color-grey-700: #BABABA;
+                --color-grey-900: #5F5F5F;
+                --color-grey-950: #222222;
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/4b80f76f52.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!--Navbar Section-->
+        <nav class="navbar"> 
+            <h6 class="title">Student_Portfolio_V1</h6>
+            <button id="collapse-button">Menu <i class="fa-solid fa-caret-down" id="navbar-drop-down-symbol"></i></button>
+            <ul class="drop-down-navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-functions">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="w-fit">Download_CV</button>
+            </div>
+        </nav>
+
+        <!--Tailwind class hierachy for this HTML: general-classes, functionality, layout, appearance, children's-layout, children's-appearance-->
+
+        <!--Header Section-->
+        <header class="mx-[5%] mt-[15vh] px-[2%] border-l-3">
+            <div class="title-section text-xl md:text-4xl lg:text-6xl">
+                <h1>Selected_works</h1>
+                <h2 class="font-bold text-xs md:text-sm lg:text-base text-grey-900 tracking-widest my-5">An archival collection of academic and personal projects focusing on <br>
+                    structural integrity, computational design and interactive systems. <br>
+                    2022 - 2024.</h2>
+            </div>
+        </header>
+
+        <main class="gallery grid grid-cols-3 mx-[5%] my-[10vh]">
+
+            <!-- Project Card 1 -->
+
+            <!-- Designed using tailwind rather than CSS to allow use of group and group-hover classes -->
+
+            <!-- min-w-0 allows for scaling of the image as the screen size decreases -->
+
+            <figure class="project-card group border min-w-0 border-grey-500 shadow-md shadow-grey-900/50 hover:bg-grey-700 px-[5%] pt-[5%] py-[5%] md:py-[20%]">
+                <div class="flex group-hover:border group-hover:border-grey-100 items-center justify-center w-full bg-center aspect-479/287 bg-no-repeat bg-cover bg-[url(images/image_placeholder.jpg)]">
+                    <div class="uppercase text-grey-900 tracking-widest text-[5px] md:text-sm bg-grey-100 font-bold px-[2%] py-[1%]">img_placeholder_01</div>
+                </div>
+                <figcaption class="flex flex-col my-[5vh] gap-[3vh] text-grey-900">
+                    <div class="flex uppercase gap-[10%] flex-col-reverse md:flex-row">
+                        <a href="#project-title" class="group-hover:text-grey-100 link text-md md:text-xl font-bold tracking-tighter text-black"><h3>Project Title</h3></a>
+                        <div class="group-hover:text-grey-100 group-hover:border-white id-no h-fit ml-auto text-[5px] md:text-sm tracking-wider text-grey-700 border border-grey-700 shadow-sm shadow-grey-900/50 px-[2%] py-[1%]">
+                            ID_001
+                        </div>
+                    </div>
+                    <p class="group-hover:text-grey-100 text-xs md:text-base">
+                        Exploration of generative patterns using modular arithmetic. 
+                        Focus on visual weight and balance <br> within a constrained 
+                        8px grid system.
+                    </p>
+                    <div class="tags flex gap-[5%] md:mt-[5vh] group-hover:text-grey-100 font-black uppercase tracking-tighter text-[5px] md:text-xs">
+                        <div>#Systems</div>
+                        <div>#Typography</div>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <!--Project Card 2-->
+            <figure class="project-card group border min-w-0 border-grey-500 shadow-md shadow-grey-900/50 hover:bg-grey-700 px-[5%] pt-[5%] py-[5%] md:py-[20%]">
+                <div class="flex group-hover:border group-hover:border-grey-100 items-center justify-center w-full bg-center aspect-479/287 bg-no-repeat bg-cover bg-[url(images/image_placeholder.jpg)]">
+                    <div class="uppercase text-grey-900 tracking-widest text-[5px] md:text-sm bg-grey-100 font-bold px-[2%] py-[1%]">img_placeholder_02</div>
+                </div>
+                <figcaption class="flex flex-col my-[5vh] gap-[3vh] text-grey-900">
+                    <div class="flex uppercase gap-[10%] flex-col-reverse md:flex-row">
+                        <a href="#interactive-skills" class="group-hover:text-grey-100 link text-md md:text-xl font-bold tracking-tighter text-black"><h3>Interactive Skill: CSS Hover Effect</h3></a>
+                        <div class="group-hover:text-grey-100 group-hover:border-white id-no h-fit ml-auto text-[5px] md:text-sm tracking-wider text-grey-700 border border-grey-700 shadow-sm shadow-grey-900/50 px-[2%] py-[1%]">
+                            ID_002
+                        </div>
+                    </div>
+                    <p class="group-hover:text-grey-100 text-xs md:text-base">
+                        Demonstrating rapid state transitions and color inversion through standard CSS utility classes.<br> 
+                        Hover over this card to view the visual transformation.
+                    </p>
+                    <div class="tags flex gap-[5%] md:mt-[5vh] group-hover:text-grey-100 font-black uppercase tracking-tighter text-[5px] md:text-xs">
+                        <div>#Interactive</div>
+                        <div>#Motion</div>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <!--Project Card 3-->
+            <figure class="project-card group border min-w-0 border-grey-500 shadow-md shadow-grey-900/50 hover:bg-grey-700 px-[5%] pt-[5%] py-[5%] md:py-[20%]">
+                <div class="flex group-hover:border group-hover:border-grey-100 items-center justify-center w-full bg-center aspect-479/287 bg-no-repeat bg-cover bg-[url(images/image_placeholder.jpg)]">
+                    <div class="uppercase text-grey-900 tracking-widest text-[5px] md:text-sm bg-grey-100 font-bold px-[2%] py-[1%]">img_placeholder_03</div>
+                </div>
+                <figcaption class="flex flex-col my-[5vh] gap-[3vh] text-grey-900">
+                    <div class="flex uppercase gap-[10%] flex-col-reverse md:flex-row">
+                        <a href="#project-title" class="group-hover:text-grey-100 link text-md md:text-xl font-bold tracking-tighter text-black"><h3>Project Title</h3></a>
+                        <div class="group-hover:text-grey-100 group-hover:border-white id-no h-fit ml-auto text-[5px] md:text-sm tracking-wider text-grey-700 border border-grey-700 shadow-sm shadow-grey-900/50 px-[2%] py-[1%]">
+                            ID_003
+                        </div>
+                    </div>
+                    <p class="group-hover:text-grey-100 text-xs md:text-base">
+                        Multi-dimensional data for urban traffic flow. Utilising dark-gray scalar values to represent density and frequency. 
+                    </p>
+                    <div class="tags flex gap-[5%] md:mt-[5vh] group-hover:text-grey-100 font-black uppercase tracking-tighter text-[5px] md:text-xs">
+                        <div>#Data_Wiz</div>
+                        <div>#Algorithmic</div>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <!--Project Card 4-->
+            <figure class="project-card group border min-w-0 border-grey-500 shadow-md shadow-grey-900/50 hover:bg-grey-700 px-[5%] pt-[5%] py-[5%] md:py-[20%]">
+                <div class="flex group-hover:border group-hover:border-grey-100 items-center justify-center w-full bg-center aspect-479/287 bg-no-repeat bg-cover bg-[url(images/image_placeholder.jpg)]">
+                    <div class="uppercase text-grey-900 tracking-widest text-[5px] md:text-sm bg-grey-100 font-bold px-[2%] py-[1%]">img_placeholder_04</div>
+                </div>
+                <figcaption class="flex flex-col my-[5vh] gap-[3vh] text-grey-900">
+                    <div class="flex uppercase gap-[10%] flex-col-reverse md:flex-row">
+                        <a href="#project-title" class="group-hover:text-grey-100 link text-md md:text-xl font-bold tracking-tighter text-black"><h3>Project Title</h3></a>
+                        <div class="group-hover:text-grey-100 group-hover:border-white id-no h-fit ml-auto text-[5px] md:text-sm tracking-wider text-grey-700 border border-grey-700 shadow-sm shadow-grey-900/50 px-[2%] py-[1%]">
+                            ID_004
+                        </div>
+                    </div>
+                    <p class="group-hover:text-grey-100 text-xs md:text-base">
+                       Design study of the brutalist architecture translated into digital interface components. 
+                       Emphasis on raw material feel and high contrast. 
+                    </p>
+                    <div class="tags flex gap-[5%] md:mt-[5vh] group-hover:text-grey-100 font-black uppercase tracking-tighter text-[5px] md:text-xs">
+                        <div>#Brutalism</div>
+                        <div>#UI_design</div>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <!--Project Card 5-->
+            <figure class="project-card group border min-w-0 border-grey-500 shadow-md shadow-grey-900/50 hover:bg-grey-700 px-[5%] pt-[5%] py-[5%] md:py-[20%]">
+                <div class="flex group-hover:border group-hover:border-grey-100 items-center justify-center w-full bg-center aspect-479/287 bg-no-repeat bg-cover bg-[url(images/image_placeholder.jpg)]">
+                    <div class="uppercase text-grey-900 tracking-widest text-[5px] md:text-sm bg-grey-100 font-bold px-[2%] py-[1%]">img_placeholder_05</div>
+                </div>
+                <figcaption class="flex flex-col my-[5vh] gap-[3vh] text-grey-900">
+                    <div class="flex uppercase gap-[10%] flex-col-reverse md:flex-row">
+                        <a href="#project-title" class="group-hover:text-grey-100 link text-md md:text-xl font-bold tracking-tighter text-black"><h3>Project Title</h3></a>
+                        <div class="group-hover:text-grey-100 group-hover:border-white id-no h-fit ml-auto text-[5px] md:text-sm tracking-wider text-grey-700 border border-grey-700 shadow-sm shadow-grey-900/50 px-[2%] py-[1%]">
+                            ID_005
+                        </div>
+                    </div>
+                    <p class="group-hover:text-grey-100 text-xs md:text-base">
+                        Responsive system framework for educational platforms. 
+                        Prioritizing information and accessible data nodes.
+                    </p>
+                    <div class="tags flex gap-[5%] md:mt-[5vh] group-hover:text-grey-100 font-black uppercase tracking-tighter text-[5px] md:text-xs">
+                        <div>#Framework</div>
+                        <div>#UX_research</div>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <!--Project Card 6-->
+            <figure class="project-card group border min-w-0 border-grey-500 shadow-md shadow-grey-900/50 hover:bg-grey-700 px-[5%] pt-[5%] py-[5%] md:py-[20%]">
+                <div class="flex group-hover:border group-hover:border-grey-100 items-center justify-center w-full bg-center aspect-479/287 bg-no-repeat bg-cover bg-[url(images/image_placeholder.jpg)]">
+                    <div class="uppercase text-grey-900 tracking-widest text-[5px] md:text-sm bg-grey-100 font-bold px-[2%] py-[1%]">img_placeholder_06</div>
+                </div>
+                <figcaption class="flex flex-col my-[5vh] gap-[3vh] text-grey-900">
+                    <div class="flex uppercase gap-[10%] flex-col-reverse md:flex-row">
+                        <a href="#project-title" class="group-hover:text-grey-100 link text-md md:text-xl font-bold tracking-tighter text-black"><h3>Project Title</h3></a>
+                        <div class="group-hover:text-grey-100 group-hover:border-white id-no h-fit ml-auto text-[5px] md:text-sm tracking-wider text-grey-700 border border-grey-700 shadow-sm shadow-grey-900/50 px-[2%] py-[1%]">
+                            ID_006
+                        </div>
+                    </div>
+                    <p class="group-hover:text-grey-100 text-xs md:text-base">
+                       Experiement log of 100 days of layout experiments.
+                       Documentation of grid-breaking patterns and asymmetrical balance.
+                    </p>
+                    <div class="tags flex gap-[5%] md:mt-[5vh] group-hover:text-grey-100 font-black uppercase tracking-tighter text-[5px] md:text-xs">
+                        <div>#Layout</div>
+                        <div>#Experimental</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </main>
+
+        <div class="archive-navigation-section flex mx-[5%] mt-[15vh] mb-[5vh] h-[15vh] pb-[2%]">
+            <div class="archive-navigation-information self-end flex border-t gap-[20vw] pt-[5vh] uppercase tracking-wider text-xs font-bold">
+                <div>Archive_Section_End</div>
+                <div>Viewing_Page_01_of_04</div>
+            </div>
+            <button id="load-next-entries-button" class="w-fit h-fit ml-auto border-2 text-md uppercase tracking-tighter font-black font-[Arial_black] py-[1%] px-[3%]">Load_Next_Entries</button>
+        </div>
+
+        <!--Footer-->
+        <footer class="flex bg-grey-500 h-[10vh] border-t-3 items-center text-[5px] md:text-xs uppercase px-[2%] py-[1%]">
+            <div class="copyright-div tracking-tighter font-black"><i class="fa-regular fa-copyright"></i> 2024 Architectural Porfolio. All Rights Reserved.</div>
+            <ul class="links ml-auto gap-[2vw] text-grey-900 flex tracking-wider">
+                <li class="link"><a href="#instagram">Instagram</a></li>
+                <li class="link"><a href="#linkedin">LinkedIn</a></li>
+                <li class="link"><a href="#github">Github</a></li>
+            </ul>
+        </footer>
+
+
+
+
+
+        <script>
+            const initializeDropDown = () => {
+
+                // Get variables
+                const navBarDropDownSymbol = document.getElementById("collapse-button");
+                const navbarDropDownLinks = document.getElementsByClassName("drop-down-navbar-links");
+
+                // Add functionality
+                navBarDropDownSymbol.addEventListener('click', ()=> {
+                    navbarDropDownLinks[0].classList.toggle("show");
+                })
+            }
+            initializeDropDown();
+        </script>
+    </body>
+</html>

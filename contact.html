@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" 
+            rel="stylesheet">
+        <style type="text/tailwindcss">
+            @theme {
+                --color-grey-100: #F9F9F9;
+                --color-grey-300: #F3F3F3;
+                --color-grey-500: #e2e2e2;
+                --color-grey-700: #BABABA;
+                --color-grey-900: #5F5F5F;
+                --color-grey-950: #222222;
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/4b80f76f52.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!--Navbar Section-->
+        <nav class="navbar"> 
+            <h6 class="title">Student_Portfolio_V1</h6>
+            <button id="collapse-button">Menu <i class="fa-solid fa-caret-down" id="navbar-drop-down-symbol"></i></button>
+            <ul class="drop-down-navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-functions">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="w-fit">Download_CV</button>
+            </div>
+        </nav>
+
+        <!--Tailwind class hierachy for this HTML: general-classes, functionality, layout, appearance, children's-layout, children's-appearance-->
+
+        <!--Header Section-->
+        <header class="mx-[5%] mt-[15vh] px-[2%] border-l-3">
+            <div class="title-section">
+                <h2 class="font-bold text-xs md:text-sm text-grey-900 tracking-[5px] my-5">03 // Inquiry_node</h2>
+                <h1 class="text-xl md:text-4xl lg:text-8xl">Leave your <br> <span class="italic text-grey-900 underline">mark.</span></h1>
+            </div>
+            <p class="uppercase mt-[5vh] text-[10px] md:text-base font-bold text-grey-900">Currently exploring the intersection of tectonic materiality and digital <br>
+                interfaces, open for architectural visualizations, full-stack <br> 
+                collaborations and technical dialogue.</p>
+        </header>
+        <main class="flex flex-col md:flex-row w-full h-full justify-center px-[5%] mt-[15vh] mb-[5vh] border-t border-grey-700 py-[10vh] gap-[5vw]">
+            <form id="contact-form" class="grid grid-cols-2 h-fit gap-x-[3vw] gap-y-[5vh] bg-grey-300 border-2 border-grey-700 uppercase px-[5%] py-[3%]">
+                <div class="flex flex-col">
+                    <label class="mb-[2vh] w-full text-[10px] font-black">Full Name</label>
+                    <input type="text" placeholder="Alex_Vance" size="50" class="w-full border-2 uppercase text-[5px] md:text-xs text-grey-700 font-bold py-[2vh]">
+                </div>
+                <div class="flex flex-col">
+                    <label class="mb-[2vh] w-full text-[10px] font-black">Email Address</label>
+                    <input type="email" placeholder="client@domain.com" size="30" class="border-2 uppercase text-[5px] md:text-xs text-grey-700 font-bold py-[2vh]">
+                </div>
+                <div class="col-span-2 flex flex-col">
+                    <label class="mb-[2vh] text-[10px] font-black">Subject</label>
+                    <input type="text" placeholder="project_collaboration" class="w-full border-2 uppercase text-[5px] md:text-xs text-grey-700 font-bold py-[2vh]">
+                </div>
+                <div class="col-span-2 flex flex-col">
+                    <label class="mb-[2vh] w-full text-[10px] font-black">Message</label>
+                    <textarea rows="5" placeholder="Describe the scope..." class="w-full border-2 uppercase text-[5px] md:text-xs text-grey-700 font-bold py-[2vh]"></textarea>
+                </div>
+                <button type="submit" class="flex gap-[2%] items-center justify-center my-[5%] border text-grey-100 bg-black uppercase text-[5px] md:text-[10px] font-bold tracking-widest px-[7%] py-[7%]">
+                    <span>Initialize Contact</span> 
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+            <div id="address-container">
+                <div class="subtitle-container">
+                    <div class="line"></div>
+                    <div class="subtitle">Geographic Node</div>
+                </div>
+                <address class="mb-[2vw] uppercase text-[5px] md:text-xs text-grey-900 leading-5 font-bold">
+                    <div class="font-black text-black text-sm md:text-xl font-[Arial_black]">Metro_Station_404</div><br>
+                    128 Tech Pavillion, Level 02<br>
+                    Zurich, Switzerland CH-8001
+                </address>
+                <figure>
+                    <div class="flex items-center justify-center w-[30vw] aspect-479/287 bg-no-repeat bg-cover bg-[url(images/image_placeholder.jpg)] shadow-md shadow-grey-900/50">
+                        <div class="bg-grey-100 text-[3px] md:text-[10px] uppercase font-bold text-grey-900 py-[1%] px-[2%]">Map_Coordinates_Zurich</div>
+                        <div class="relative right-[5.5vw] black-square bg-black w-1 md:w-3 aspect-square"></div>
+                    </div>
+                </figure>
+                <div class="subtitle-container">
+                    <div class="line"></div>
+                    <div class="subtitle">Direct Reach</div>
+                </div>
+                <div class="link direct-reach-contact-details">Hello@studioarchive.io <i class="arrow fa-solid fa-arrow-right"></i></div>
+                <div class="link direct-reach-contact-details">+41000 000 000 <i class="arrow fa-solid fa-arrow-right"></i></div>
+                <div class="subtitle-container">
+                    <div class="line"></div>
+                    <div class="subtitle">Digital Presence</div>
+                </div>
+                <div class="button-container">
+                    <button>Instagram <i class="arrow fa-solid fa-arrow-right"></i></button>
+                    <button>LinkedIn <i class="arrow fa-solid fa-arrow-right"></i></button>
+                    <button>Github <i class="arrow fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>   
+        </main>
+
+        <!--Footer-->
+        <footer class="flex bg-grey-500 h-[10vh] border-t-3 items-center text-[5px] md:text-xs uppercase px-[2%] py-[1%]">
+            <div class="copyright-div tracking-tighter font-black"><i class="fa-regular fa-copyright"></i> 2024 Architectural Porfolio. All Rights Reserved.</div>
+            <ul class="links ml-auto gap-[2vw] text-grey-900 flex tracking-wider">
+                <li class="link"><a href="#instagram">Instagram</a></li>
+                <li class="link"><a href="#linkedin">LinkedIn</a></li>
+                <li class="link"><a href="#github">Github</a></li>
+            </ul>
+        </footer>
+
+        <script>
+            const initializeDropDown = () => {
+
+                // Get variables
+                const navBarDropDownSymbol = document.getElementById("collapse-button");
+                const navbarDropDownLinks = document.getElementsByClassName("drop-down-navbar-links");
+
+                // Add functionality
+                navBarDropDownSymbol.addEventListener('click', ()=> {
+                    navbarDropDownLinks[0].classList.toggle("show");
+                })
+            }
+            initializeDropDown();
+        </script>
+    </body>
+</html>
