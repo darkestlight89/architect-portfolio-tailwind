@@ -34,6 +34,9 @@ Contact details for your company. This also has a contact form that will have th
 ### Footer
 This contains company details and links to the company's social media. 
 
+## How to view
+To view this site, simply navigate to: https://darkestlight89.github.io/architect-portfolio-tailwind/index.html
+
 ## File List
 ### Images 
 Folder containing all images used in this project. All images are from unsplash.com and are free to use under the unsplash license. Credit to the image creators is in the HTML but is not rendered on the webpage to provide a more consistent layout. 
