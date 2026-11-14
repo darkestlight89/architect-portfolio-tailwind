@@ -314,6 +314,36 @@ h1 {
     font-weight: 900;
 }
 
+/* Subtitle container responsivenes */
+
+@media (max-width: 650px) {
+    .subtitle-container {
+        margin-top: 5vh;
+    }
+
+    .subtitle-container:nth-child(1){
+        margin-top: 2vh;
+    }
+    .subtitle-container .subtitle {
+        font-size: 5px;
+    }
+
+    .direct-reach-contact-details {
+        font-size: 8px;
+    }
+
+    .button-container button {
+        font-size:5px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .subtitle-container:nth-child(1){
+        margin-top: 5vh;
+    }
+}
+
 /* Direct reach contact details */
 
 .direct-reach-contact-details {
@@ -347,34 +377,4 @@ h1 {
     font-weight: 900;
     letter-spacing: 2px;
     box-shadow: 3px 3px 5px #5F5F5F;
-}
-
-/* Subtitle container responsivenes */
-
-@media (max-width: 650px) {
-    .subtitle-container {
-        margin-top: 5vh;
-    }
-
-    .subtitle-container:nth-child(1){
-        margin-top: 2vh;
-    }
-    .subtitle-container .subtitle {
-        font-size: 5px;
-    }
-
-    .direct-reach-contact-details {
-        font-size: 8px;
-    }
-
-    .button-container button {
-        font-size:5px;
-    }
-
-}
-
-@media (max-width: 1000px) {
-    .subtitle-container:nth-child(1){
-        margin-top: 5vh;
-    }
 }
