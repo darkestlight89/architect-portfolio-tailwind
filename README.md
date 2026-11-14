@@ -5,9 +5,18 @@ An Architect Portfolio Designed Using HTML, CSS, Tailwind and JS Vanilla
 ### Design
 This is a architectural porfolio website to promote the current ongoing and completed projects of an architectural firm. It uses HTML for structure with a combination of CSS and tailwind for styling and responsiveness to different screen sizes. It also uses javascript to control the links of the navbar, reducing them to a dropdown menu for smaller screen sizes. All projects on this website are models that have been fabricated for display purposes. 
 
-This is also a completion of a piece of coursework for ITOL Tailwind CSS where a wireframe was provided and it was provided to replicate this as closely as possibly using HTML, CSS and tailwind. The use of absolute positiong was strictly not allowed. 
+This is also a completion of a piece of coursework for ITOL Tailwind CSS where a wireframe was provided and it was provided to replicate this as closely as possibly using HTML, CSS and tailwind. The use of absolute positioning was strictly not allowed. 
 
-![alt text](https://github.com/darkestlight89/architect-portfolio-tailwind/blob/main/images/image_placeholder.jpg?raw=true)
+![wireframe screenshot](https://github.com/darkestlight89/architect-portfolio-tailwind/blob/main/images/wireframe_screenshot.jpg?raw=true)
+*Wireframe Screenshot*
+![wireframe screenshot](https://github.com/darkestlight89/architect-portfolio-tailwind/blob/main/images/homepage_screenshot.jpg?raw=true)
+*Homepage Screenshot*
+
+**@theme** was used to customise tailwind's default colours using hexi-decimal values placed in the style tag underneath the head of each HTML page. This allowed me to match the colours as closely as possible using a colour picker. 
+
+Using the **CSS grid** allowed me to easily solve a responsive layout problem I observed with the project gallery on the smaller screens: by having the column number change from 3 columns to 1 column on screens smaller than 1280px, I improved the layout for smaller screens without compromising the associated image resolution or dimensions. 
+
+Other tailwind features used were **flexboxes**, **margin** and **padding**, **font-thickness**, **letter-spacing**, **word-spacing** and **group** and **group-hover**. 
 
 ### Features
 #### Navigational bar
