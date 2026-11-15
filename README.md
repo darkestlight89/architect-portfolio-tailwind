@@ -1,4 +1,4 @@
-# architect-portfolio-tailwind
+# Architect-Portfolio-Tailwind
 An Architect Portfolio Designed Using HTML, CSS, Tailwind and JS Vanilla
 
 ## Design & Features
@@ -9,6 +9,7 @@ This is also a completion of a piece of coursework for ITOL Tailwind CSS where a
 
 ![wireframe screenshot](https://github.com/darkestlight89/architect-portfolio-tailwind/blob/main/images/wireframe_screenshot.jpg?raw=true)
 *Wireframe Screenshot*
+
 ![wireframe screenshot](https://github.com/darkestlight89/architect-portfolio-tailwind/blob/main/images/homepage_screenshot.jpg?raw=true)
 *Homepage Screenshot*
 
